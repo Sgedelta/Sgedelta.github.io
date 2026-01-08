@@ -23,7 +23,6 @@ let displayCycling = {val: true, running: false}
 
 let cycleRandomChars = async () => {
 
-    console.log("cycling!");
     //tell it we're running, incase multiple are running at once
     displayCycling.running = true;
 
@@ -74,7 +73,6 @@ let cycleRandomChars = async () => {
 
 const repeatFunctionUntilFalse = async (flag, fn) => {
     while(flag.val) {
-        console.log(flag);
         if(flag.running) {
             return;
         }
