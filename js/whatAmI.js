@@ -70,7 +70,5 @@ const showOrHideCursor = (show) => {
     cursorDisplay.textContent = (cursorState || typing) ? "|" : "";
 }
 
-
-
 mainDisplayLoop(0);
 blinkCursor();
